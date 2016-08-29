@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "Lotuseed"
-  s.version      = '0.0.4'
-  s.summary      = "The whole process automated visualization, custom KPI dashboards, and business data system flexible docking, third-party data sources can be docked and reporting systems."
+  s.version      = '0.0.5'
+  s.summary      = "Third-party data sources can be docked and reporting systems."
   s.homepage     = 'https://github.com/CoralSeaGhy/Lotuseed'
   s.license      = 'MIT'
   s.author       = { 'CoralSeaGhy' => '15136166637@163.com' }
@@ -9,6 +9,5 @@ Pod::Spec.new do |s|
   s.source_files  = 'Lotuseed/*'
   s.platform     = :ios, '4.3'
   s.frameworks = 'SystemConfiguration', 'Security'
-  s.library   = 'libz'
   s.requires_arc = false
 end
