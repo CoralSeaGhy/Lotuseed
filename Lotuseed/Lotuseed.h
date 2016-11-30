@@ -28,6 +28,11 @@
 + (void)startWithAppKey:(NSString *)appKey channelID:(NSString *)cid appleID:(NSString*)aid;
 
 /**
+ * Lotuseed推送功能
+ */
++ (void)registerDeviceToken:(NSString *)token; //向后台发送deviceToken
+
+/**
  * 是否设置Lotuseed SDK为DEBUG模式
  * 默认为NO
  */
@@ -266,4 +271,23 @@ typedef enum {
  */
 + (NSString*) exportFirmwareVersion;
 
+#ifdef LOTUSEED_FEED
+/**
+ * 意见反馈 present
+ * @return
+ */
++ (void)showHistoryFeedBackControllerWithController:(UIViewController *)controller;
+
+/**
+ * 意见反馈 push
+ * @return
+ */
++ (UIViewController *)showHistoryFeedBackController;
+
+/**
+ * 意见反馈 获取是否有新的回复信息
+ * @return
+ */
++ (BOOL)ifHaveNewReply;
+#endif
 @end
