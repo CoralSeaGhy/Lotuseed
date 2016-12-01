@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Lotuseed"
-  s.version      = '0.0.8'
+  s.version      = '0.0.9'
   s.summary      = "Third-party data sources can be docked and reporting systems."
   s.homepage     = 'https://github.com/CoralSeaGhy/Lotuseed'
   s.license      = 'MIT'
