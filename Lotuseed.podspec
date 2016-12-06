@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { 'CoralSeaGhy' => '15136166637@163.com' }
   s.source       = { :git => "https://github.com/CoralSeaGhy/Lotuseed.git", :tag => s.version.to_s }
-  s.source_files  = 'Lotuseed'
+  s.source_files  = 'Lotuseed/*'
   s.subspec 'LotuseedStatic' do |Lot|
       Lot.name = "Lot"
       Lot.source_files = 'Lotuseed/Resources/*.h'
