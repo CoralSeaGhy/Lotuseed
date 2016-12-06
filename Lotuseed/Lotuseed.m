@@ -1,4 +1,4 @@
-﻿
+
 //  Lotuseed.m
 //  Lotuseed
 //
@@ -9,7 +9,7 @@
 #include <signal.h>
 #include <execinfo.h>
 #import <objc/runtime.h>
-#import "../inc/Lotuseed.h"
+#import "Lotuseed.h"
 #import "LotuseedInternal.h"
 #import "LSDVersion.h"
 #import "LSDConstants.h"
