@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Lotuseed"
-  s.version      = '1.2.2'
+  s.version      = '1.2.3'
   s.summary      = "Third-party data sources can be docked and reporting systems."
   s.homepage     = 'https://github.com/CoralSeaGhy/Lotuseed'
   s.license      = 'MIT'
@@ -12,4 +12,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '4.3'
   s.frameworks = 'SystemConfiguration', 'Security'
   s.requires_arc = false
+  arc_files =  'Lotuseed/LSDHistoryFeedBackCell.m', 'Lotuseed/LSDFeedBackController.m', 'Lotuseed/LSDHistoryFeedBackViewController.m', 'Lotuseed/LSDFeedBackDetailController.m', 'Lotuseed/LSDFeedBackVO.m'
+  s.exclude_files = arc_files  
+  s.subspec 'arc' do |sna|  
+    sna.requires_arc = true  
+    sna.source_files = arc_files  
+  end 
 end
