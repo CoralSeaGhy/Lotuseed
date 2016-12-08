@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Lotuseed"
-  s.version      = '1.2.7'
+  s.version      = '1.2.8'
   s.summary      = "Third-party data sources can be docked and reporting systems."
   s.homepage     = 'https://github.com/CoralSeaGhy/Lotuseed'
   s.license      = 'MIT'
@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.ios.vendored_libraries = 'Lotuseed/libLotuseed.a'
   s.public_header_files = 'Lotuseed/Lotuseed.h'
   s.platform     = :ios, '4.3'
-  s.frameworks = 'SystemConfiguration', 'Security'
+  s.frameworks = 'SystemConfiguration', 'Security', 'CoreLocation', 'AdSupport', 'CoreTelephony', 'Foundation'
+  s.libraries = 'libz'
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC'}
   s.requires_arc = false 
 end
